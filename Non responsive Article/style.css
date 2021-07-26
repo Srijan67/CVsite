@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: rgb(168, 168, 168); */
+    background-color: rgb(218, 218, 218);
+}
+.truck-logo {
+    width: 19%;
+    height: 125%;
+    position: relative;
+    bottom: 7%;
+    left: 6%;
+    
+}
+.title {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Tomorrow', sans-serif;
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    line-height: .6;
+}
+.sub-title {
+    font-size: 1rem;
+    margin-left: 14%;
+}
+.first-tag {
+    /* margin-left: 19%;
+    margin-right: 19%; */
+    margin: auto 19% 7px 19%;
+    background-color: rgb(240, 134, 47);
+}
+
+.nav-items, .event-link {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 123, 0);
+    font-family: 'Tomorrow';
+
+}
+.nav-content {
+    text-decoration: none;
+    list-style: none;
+    margin: 2% 1%;
+    background-color: rgb(83, 82, 82);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: .8em;
+}
+.container {
+    background-color: rgb(168, 168, 168);
+    height: fit-content;
+    margin: auto 19% auto 19%;
+    padding: 1px;
+}
+.event-container {
+    list-style: none;
+    text-decoration: underline;
+    margin: 2%;
+    padding: 1% 15% 3%;
+}
+.event, .news {
+margin: 5%;
+background-color: #fff;
+align-content: center;
+margin-right: 7%;
+}
+.head {
+    background-color: rgb(77, 77, 77);
+    color: chocolate;
+    font-size: x-large;
+    padding: 4% 15%;
+}
+.event-reads {
+    margin-bottom: 4%;
+}
+.event-link {
+    color: black;
+    font-size: 14px;
+}
+
+.news-article {
+    margin-top: 4%;
+    padding: 2% 5%;
+    text-align: left;
+}
+.side {
+    width: 230%;
+}
+.reads {
+    border-left: 4px solid chocolate;
+    padding: 2%;
+}
+.article-head, .vision-head, .mission-head {
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 2.5%;
+}
+.article {
+    /* display: grid;
+    grid-template-columns: 1.5fr 3fr; */
+    display: flex;
+}
+.about {
+    margin-bottom: 10%;
+}
+.bottom {
+    display: flex;
+    
+}
+.mission {
+    padding-left: 4%;
+
+}
+.border-part {
+    border-right: 2px solid chocolate;
+    padding-right: 10%;
+
+}
+.more {
+    background-color: rgb(240, 134, 47);
+    color: whitesmoke;
+    padding: 4%;
+    margin-top: 40%;
+    font-weight: 800;
+}
+footer {
+    color: white;
+    background-color: rgb(66, 66, 66);
+    padding: 3%;
+    margin: 2%;
+    text-align: center;
+}
+
+
