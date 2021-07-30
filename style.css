@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  overflow-x: hidden;
+}
+.container {
+  width: 100vw;
+}
+nav {
+  width: 100vw;
+
+  background-color: rgba(63, 63, 63, 0.63);
+  box-shadow: 0 7px 100px rgba(187, 187, 187, 0.87);
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar {
+  width: 50vw;
+  height: 15vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+
+  /* overflow: hidden; */
+  /* background-color: red; */
+}
+.links {
+  width: 30vw;
+  list-style: none;
+  padding: 2% 5%;
+  cursor: pointer;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+a:hover,
+.links:hover a {
+  color: rgb(1, 255, 191);
+}
+.logo {
+  list-style: none;
+}
+.logo img {
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  left: 15vw;
+  width: -20%;
+}
+.design {
+  width: 70%;
+  position: relative;
+  margin-left: 20%;
+  margin-top: 16vh;
+}
+.srijan-dp {
+  width: 22%;
+  border-radius: 2em;
+  position: absolute;
+  top: 30%;
+  left: 67%;
+}
+.front-text {
+  visibility: hidden;
+  font-weight: 600;
+  position: absolute;
+  top: 54%;
+  left: 23%;
+  font-size: 2vw;
+  letter-spacing: 0.15rem;
+  text-align: center;
+}
+
+.skills {
+  width: 100vw;
+  text-align: center;
+  min-height: 40vh;
+}
+/* .skills .skill-headline {
+  transition: none;
+  animation: none;
+} */
+.skill-headline {
+  padding-bottom: 20px;
+}
+.fa-sort-down {
+  color: white;
+}
+.links:hover a .fa-sort-down,
+.links:hover a {
+  color: rgb(1, 255, 191);
+  transform: rotate(90deg);
+}
+.sub-nav {
+  background-color: rgb(63, 63, 63);
+  border-top: 2px solid rgb(1, 255, 191);
+
+  /* box-shadow: 1px 2px 10px rgba(187, 187, 187, 0.87); */
+  margin-top: 2%;
+  list-style: none;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  position: absolute;
+  top: 45px;
+  z-index: 11;
+  /* text-align: left; */
+  visibility: hidden;
+  /* text-align: center; */
+}
+.sub-nav .sub-menu a {
+  color: white;
+}
+.sub-nav .sub-menu a:hover {
+  color: rgb(1, 255, 191);
+}
+.links:hover .sub-nav {
+  visibility: visible;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+}
+.links:hover .fas {
+  transform: rotate(180deg);
+  color: blue;
+}
+/* .pgon:hover {
+  visibility: hidden;
+} */
+.projects {
+  margin-top: 8vw;
+
+  width: 100vw;
+  min-height: 50vh;
+  text-align: center;
+}
+.project-headline {
+  text-align: center;
+}
+.sub-projects {
+  min-width: 60vw;
+  max-width: 90vw;
+  min-height: 70vh;
+  margin: 0.5vw auto;
+  border: 2px solid gray;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* box-shadow: -3px -8px 15px grey; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-auto-rows: 200px; */
+  gap: 0.5vw;
+}
+.project,
+.project a {
+  /* background-color: gray; */
+  /* margin: 0.5vw; */
+  /* padding: 5%; */
+  border-radius: 20px;
+  height: 20rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.project:hover,
+.project:hover a {
+  /* background-color: rgba(148, 148, 148, 0.212); */
+  /* text-shadow: 2px 6px 9px white; */
+  font-weight: bold;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+.polygon-main {
+  width: 80vw;
+  height: fit-content;
+}
+.contact {
+  width: 100vw;
+  min-width: 50vw;
+  height: fit-content;
+  text-align: center;
+}
+
+.contact h3 a {
+  list-style: none;
+  text-decoration: none;
+  color: aquamarine;
+}
+h3:hover a {
+  color: whitesmoke;
+}
+.home-forest {
+  background-image: url("images/variety\ of\ succulent\ plants.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.project .grid-btn {
+  background-color: rgba(255, 255, 255, 0.493);
+  border-radius: 10px;
+  padding: 5px;
+}
+.project .grid-btn:hover {
+  padding: 125px 160px;
+  font-size: 2rem;
+  transition: 0.8s ease;
+}
+.design-responsive {
+  height: 0vh;
+  width: 0vw;
+}
+/*media query Responsive design */
+@media screen and (max-width: 750px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  nav {
+    width: 100vw;
+  }
+  .links {
+    display: none;
+  }
+  .skills {
+    height: fit-content;
+    min-height: 40vh;
+  }
+
+  .srijan-dp {
+    width: 350px;
+    left: 40px;
+    top: 20vh;
+    transition: 0.5s ease;
+  }
+
+  .design {
+    visibility: hidden;
+  }
+  .contact-img1 {
+    display: none;
+  }
+  .projects {
+    min-height: 50vh;
+  }
+  .design-responsive {
+    width: 840px;
+    height: 634px;
+    position: absolute;
+    z-index: -9;
+    left: -20px;
+    top: 60px;
+    transition: all 0.5s ease;
+
+    /*left: -20px;
+    top: 80px;
+    vertical-align: super;
+    height: min-content; */
+  }
+  .front-text {
+    font-size: 20px;
+    /* font-weight: bold; */
+    position: relative;
+
+    bottom: 150px;
+    left: 90px;
+    float: left;
+    transition: all 1.5s ease;
+  }
+}
